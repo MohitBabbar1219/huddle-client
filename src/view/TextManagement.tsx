@@ -12,6 +12,7 @@ import { useState } from 'react';
 
 const TextManagement = (props: any) => {
   const [previewText, setPreviewText] = useState('');
+  const [text, setText] = useState('');
   const [showLangInput, setShowLangInput] = useState(false);
   const [showQuestionInput, setShowQuestionInput] = useState(false);
   return (
@@ -25,6 +26,7 @@ const TextManagement = (props: any) => {
           style={{
             height: '40vh',
           }}
+          onChange={(e) => setText(e.target.value)}
         />
         <h6>Actions to be taken</h6>
         <Container fluid>
