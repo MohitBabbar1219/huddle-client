@@ -1,27 +1,24 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = (props: any) => {
   return (
-      <nav className="navbar px-5 navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Huddle</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Meeting Notes</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Text & Communication</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Writing Helps</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">Huddle</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Meeting Notes</Nav.Link>
+              <Nav.Link href="#link">Text & Communication</Nav.Link>
+              <Nav.Link href="#link">Writing Help</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   );
 };
 
