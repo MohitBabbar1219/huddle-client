@@ -13,6 +13,7 @@ const NavBar = (props: any) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Meeting Notes</Nav.Link>
+              <Nav.Link href="#home">Transcript Notes</Nav.Link>
               <Nav.Link href="#link">Text & Communication</Nav.Link>
               <Nav.Link href="#link">Writing Help</Nav.Link>
             </Nav>

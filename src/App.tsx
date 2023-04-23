@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import MeetingManagement from "./view/MeetingManagements";
+import MeetingManagement from "./view/MeetingManagement/MeetingManagements";
 
 function App() {
   const [count, setCount] = useState(0)
