@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MeetingManagement from './view/MeetingManagements';
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
 import TextManagement from './view/TextManagement';
 import WritingHelp from './view/WritingHelp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MeetingManagement from './view/MeetingManagement/MeetingManagements';
 
 const router = createBrowserRouter([
   {
